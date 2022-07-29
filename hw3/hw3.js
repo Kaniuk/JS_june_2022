@@ -14,7 +14,7 @@ if (x !== 0) {
 
 //////////////// Варіант 1 //////////////////////////
 let time = 20;
-if (time <= 15) {
+if (time >= 0 && time <= 15) {
     console.log('Це 1 частина години');
 } else if (time >= 15 && time <= 30) {
     console.log('Це 2 частина години');
@@ -32,7 +32,7 @@ console.log(`Це ${result} частина години`);
 let day = 11;
 
 //////////////// Варіант 1 //////////////////////////
-if (day <= 10) {
+if (day >= 1 && day <= 10) {
     console.log('Це 1 декада місяця');
 } else if (day >= 10 && day <= 20) {
     console.log('Це 2 декада місяця');
@@ -91,7 +91,16 @@ if (firstNumber >= secondNumber) {
 //     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
 let y = '';
-
 y = y || 'default';
 
 console.log(y);
+
+let z = null;
+if (!z) {
+    z = 'default';
+}
+console.log(z);
+
+
+
+
