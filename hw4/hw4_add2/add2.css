@@ -1,0 +1,16 @@
+.user {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 40%;
+    font-size: 20px;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phone {
+    padding-bottom: 25px;
+}
