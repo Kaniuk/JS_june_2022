@@ -107,6 +107,27 @@ let cards = [
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
+let diamondJoker = cards.find(card => card.cardSuit === 'diamond' && card.value === 'joker');
+console.log(diamondJoker);
+
+let six = cards.filter(card => card.value === 6);
+console.log(six);
+
+let redColor = cards.filter(card => card.color === 'red');
+console.log(redColor);
+
+let allDiamonds = cards.filter(card => card.cardSuit === 'diamond');
+console.log(allDiamonds);
+
+const checkIfGEThen9 = (card) => {
+    if (typeof card.value === 'string') {
+        return true;
+    }
+    return card.value >= 9;
+};
+let bigClubs = cards.filter(card => card.cardSuit === 'clubs' && checkIfGEThen9(card));
+console.log(bigClubs);
+
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
