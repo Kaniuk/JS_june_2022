@@ -22,7 +22,6 @@ let str = "HTML JavaScript PHP";
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
 let insert_dash = (str) => str.toUpperCase().replaceAll(' ', '-');
 
-
 console.log(insert_dash(str));
 // - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
 
@@ -38,9 +37,7 @@ let n3 = 'Hermione__Granger';
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
-//
-let a = '.';
-let b = '-';
+
 let normalizeName = (name) => name
     .replaceAll('.', ' ')
     .replaceAll('-', ' ')
@@ -55,7 +52,6 @@ let randomizer = (limat) => {
     let arr = [];
     for (let i = 0; i < limat; i++) {
         arr[i] = Math.round(Math.random() * 100);
-
     }
     return arr;
 };
