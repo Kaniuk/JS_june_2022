@@ -28,9 +28,16 @@ console.log(arr.map(number => number + ''));
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 let nums = [11, 21, 3];
-let ascending = nums.sort((a, b) => a - b);
-let descending = nums.sort((a, b) => b - a);
-console.log(ascending);
+let sortByDuration = (arr, duration) => {
+    if (duration === 'ascending') {
+        return nums.sort((a, b) => a - b);
+    } else if (duration === 'descending') {
+        return nums.sort((a, b) => b - a);
+    } else {
+        return 'Opps? something goes wrong(';
+    }
+};
+console.log(sortByDuration(nums, 'ascending'));
 
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
