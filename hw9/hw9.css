@@ -1,0 +1,14 @@
+.member {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 55%;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+.durations {
+    display: flex;
+}
